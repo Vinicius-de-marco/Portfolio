@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio — Vinicius</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+ <a href="index.html"> <span class="nav-logo">// Vinicius De Marco</span></a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    Disponível para oportunidades
+  </div>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-left">
+    <div class="hero-tag">⚡ Full Stack Developer</div>
+    <h1 class="hero-name">
+      Olá, eu sou<br>
+      <span>Vinicius</span>
+    </h1>
+    <p class="hero-role">
+      Desenvolvedor <em>Front-end · Back-end · Banco de dados</em><br>
+      apaixonado por criar interfaces e APIs que escalam com elegância.
+    </p>
+    <div class="type-line">
+      <span class="type-prefix">$</span>
+      <span id="typed-text"></span>
+      <span class="type-cursor">▍</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">Ver Projetos</a>
+      <a href="#contact" class="btn-ghost">Entre em Contato</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="t-dot t-red"></span>
+        <span class="t-dot t-yellow"></span>
+        <span class="t-dot t-green"></span>
+        <span class="terminal-title">~/portfolio/about.ts</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-comment">// quem sou eu</span></div>
+        <div class="t-blank"></div>
+        <div class="t-line">
+          <span class="t-key">const</span>&nbsp;<span class="t-cmd">dev</span>&nbsp;= {
+        </div>
+        <div class="t-line">
+          &nbsp;&nbsp;<span class="t-key">nome</span>:&nbsp;<span class="t-val">"Vinicius"</span>,
+        </div>
+        <div class="t-line">
+          &nbsp;&nbsp;<span class="t-key">nível</span>:&nbsp;<span class="t-val">"Júnior"</span>,
+        </div>
+        <div class="t-line">
+          &nbsp;&nbsp;<span class="t-key">foco</span>:&nbsp;[
+        </div>
+        <div class="t-line">
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"React"</span>,&nbsp;<span class="t-str">"TypeScript"</span>,
+        </div>
+        <div class="t-line">
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Node.js"</span>,&nbsp;<span class="t-str">"SQL/NoSQL"</span>
+        </div>
+        <div class="t-line">&nbsp;&nbsp;],</div>
+        <div class="t-line">
+          &nbsp;&nbsp;<span class="t-key">status</span>:&nbsp;<span class="t-str">"open_to_work"</span>,
+        </div>
+        <div class="t-line">
+          &nbsp;&nbsp;<span class="t-key">café</span>:&nbsp;<span class="t-val">Infinity</span>
+        </div>
+        <div class="t-line">}</div>
+        <div class="t-blank"></div>
+        <div class="t-line">
+          <span class="t-key">export default</span>&nbsp;<span class="t-cmd">dev</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag reveal">// 01 — habilidades</div>
+  <h2 class="section-title reveal">Stack Técnica</h2>
+  <p class="section-sub reveal">
+    As tecnologias que uso no dia a dia para construir produtos completos — da interface ao banco de dados.
+  </p>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚛️</div>
+      <div class="skill-label">Front-end</div>
+      <p class="skill-desc">Criação de interfaces responsivas, componentizadas e acessíveis com foco em performance e experiência do usuário.</p>
+      <div class="skill-tags">
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">Tailwind</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚙️</div>
+      <div class="skill-label">Back-end</div>
+      <p class="skill-desc">Desenvolvimento de APIs RESTful robustas, autenticação, middlewares e integração com serviços externos.</p>
+      <div class="skill-tags">
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">REST API</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">🗄️</div>
+      <div class="skill-label">Banco de Dados</div>
+      <p class="skill-desc">Modelagem, consultas otimizadas e manutenção de bancos relacionais e não-relacionais conforme o contexto.</p>
+      <div class="skill-tags">
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">MySQL</span>
+      </div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-label">Ferramentas & DevOps</div>
+      <p class="skill-desc">Versionamento, containers e boas práticas para entregar código limpo e colaborativo em times ágeis.</p>
+      <div class="skill-tags">
+        <span class="tag">Git</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Scrum</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag reveal">// 02 — projetos</div>
+  <h2 class="section-title reveal">O que já construí</h2>
+  <p class="section-sub reveal">
+    Projetos que demonstram minha capacidade de entregar soluções completas e funcionais. Adicione seus projetos reais aqui!
+  </p>
+
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-num">01</div>
+        <div class="project-links">
+          <a href="https://github.com/Vinicius-de-marco/InergiaE.git" class="icon-btn" title="GitHub">⌥</a>
+          <a href="https://inergiae.com.br/" class="icon-btn" title="Demo">↗</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">InergiaE</div>
+        <p class="project-desc">
+         Desenvolvimento de um site feito com HTML basico para o cliente também conseguir editar o site sem precisar de suporte.
+         Site para uma empresa de conversores estáticos, onde o cliente pode acessar informações sobre os produtos, serviços e contato. O site é responsivo e fácil de navegar, proporcionando uma experiência agradável para os visitantes.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">React</span>
+          <span class="stack-badge">Node.js</span>
+          <span class="stack-badge">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-num">02</div>
+        <div class="project-links">
+          <a href="https://github.com/Vinicius-de-marco/Gerenciatarefa.git" class="icon-btn" title="GitHub">⌥</a>
+          <a href="#" class="icon-btn" title="Demo">↗</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Gerenciador de tarefas</div>
+        <p class="project-desc">
+          Fiz um gerenciador de tarefas simples usando React + node.js + Express + SQLite. O projeto tem autenticação de usuário, criação/edição/exclusão de tarefas e uma interface limpa e responsiva.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">React</span>
+          <span class="stack-badge">Node.js</span>
+          <span class="stack-badge">SQLite</span>
+          <span class="stack-badge">Express</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-num">03</div>
+        <div class="project-links">
+          <a href="https://github.com/Vinicius-de-marco/antidistracao.git" class="icon-btn" title="GitHub">⌥</a>
+          <a href="#" class="icon-btn" title="Demo">↗</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Anti Distração</div>
+        <p class="project-desc">
+          Um software de anti distração feito em Python, onde o usuario conecta a webcam ao software e ele detecta quando o usuario está olhando para a tela ou não, caso o usuario olhe para outro lugar por mais de 5 segundos, o software coloca um aviso na tela e só sai quando o usuario olhar para a tela novamente.
+        </p>
+        <div class="project-stack">
+          <span class="stack-badge">python</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="add-project reveal">
+      <div class="add-icon">+</div>
+      <span class="add-label">Adicionar projeto</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<div id="about">
+  <div class="about-text">
+    <div class="section-tag reveal">// 03 — sobre mim</div>
+    <h2 class="section-title reveal">Quem está por trás do código</h2>
+    <p class="about-p reveal">
+      Me chamo <em>Vinicius</em>, desenvolvedor full stack júnior (ainda me encontrando em qual cargo seguir) com foco em construir aplicações web modernas e bem estruturadas. Gosto de entender profundamente o problema antes de escrever a primeira linha de código.
+    </p>
+    <p class="about-p reveal">
+      Atualmente estudando <em>arquitetura de software</em> e boas práticas de engenharia para crescer com consistência na carreira. Estou sempre aberto a aprender com times experientes.
+    </p>
+    <p class="about-p reveal">
+      Fora do teclado: <em>música, café de qualidade</em> e séries de ficção científica.
+    </p>
+    <div class="stats-grid reveal">
+      <div class="stat-box">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Projetos</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Anos estudando</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Tecnologias</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Curiosidade</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-right reveal">
+    <div class="code-block">
+      <div><span class="ln">01</span><span class="cm">// formação e aprendizado</span></div>
+      <div><span class="ln">02</span>&nbsp;</div>
+      <div><span class="ln">03</span><span class="kw">function</span> <span class="fn">minhaJornada</span>() {</div>
+      <div><span class="ln">04</span>&nbsp;&nbsp;<span class="kw">const</span> <span class="prop">formação</span> = <span class="str">"Seu Curso / Faculdade"</span></div>
+      <div><span class="ln">05</span>&nbsp;</div>
+      <div><span class="ln">06</span>&nbsp;&nbsp;<span class="kw">const</span> <span class="prop">estudando</span> = [</div>
+      <div><span class="ln">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Clean Code"</span>,</div>
+      <div><span class="ln">08</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"System Design"</span>,</div>
+      <div><span class="ln">09</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Testing (Jest)"</span></div>
+      <div><span class="ln">10</span>&nbsp;&nbsp;]</div>
+      <div><span class="ln">11</span>&nbsp;</div>
+      <div><span class="ln">12</span>&nbsp;&nbsp;<span class="kw">const</span> <span class="prop">idiomas</span> = {</div>
+      <div><span class="ln">13</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">português</span>: <span class="str">"nativo"</span>,</div>
+      <div><span class="ln">14</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">inglês</span>: <span class="str">"intermediário"</span></div>
+      <div><span class="ln">15</span>&nbsp;&nbsp;}</div>
+      <div><span class="ln">16</span>&nbsp;</div>
+      <div><span class="ln">17</span>&nbsp;&nbsp;<span class="kw">return</span> { <span class="prop">formação</span>, <span class="prop">estudando</span>, <span class="prop">idiomas</span> }</div>
+      <div><span class="ln">18</span>}</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag reveal">// 04 — contato</div>
+  <h2 class="section-title reveal">Vamos conversar?</h2>
+  <p class="section-sub reveal">
+    Estou disponível para oportunidades de emprego, freelas e colaborações. Me manda uma mensagem!
+  </p>
+  <a href="mailto:seuemail@email.com" class="btn-primary reveal" style="display:inline-block; margin-bottom: 2.5rem;">
+    seuemail@email.com
+  </a>
+  <div class="contact-links reveal">
+    <a href="https://github.com/seugithub" class="contact-link" target="_blank">
+      ⌥ GitHub
+    </a>
+    <a href="https://linkedin.com/in/seulinkedin" class="contact-link" target="_blank">
+      ↗ LinkedIn
+    </a>
+    <a href="#" class="contact-link">
+      ↓ Download CV
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 — Seu Nome</span>
+  <span>Desenvolvido com HTML · CSS · JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
