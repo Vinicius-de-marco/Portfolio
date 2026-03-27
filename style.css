@@ -382,15 +382,15 @@
     .prop { color: var(--text); }
     .num { color: #f0c060; }
 
-    /* ── CONTACT ── */
-    #contact {
+    /* ── contato ── */
+    #contato {
       text-align: center;
       padding: 6rem 3rem;
       max-width: 700px;
       margin: 0 auto;
     }
-    #contact .section-title { font-size: clamp(2rem, 4vw, 3.5rem); }
-    #contact .section-sub { margin: 0 auto 2.5rem; }
+    #contato .section-title { font-size: clamp(2rem, 4vw, 3.5rem); }
+    #contato .section-sub { margin: 0 auto 2.5rem; }
     .contact-links {
       display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;
       margin-bottom: 4rem;
