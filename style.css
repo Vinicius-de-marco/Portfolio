@@ -271,6 +271,52 @@
     }
     .skill-card:hover .tag { border-color: rgba(0,255,194,.2); color: var(--text); }
 
+    /* ── CERTIFICAÇÕES ── */
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .cert-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1.8rem;
+      transition: border-color .25s, transform .25s;
+      position: relative; overflow: hidden;
+    }
+    .cert-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--accent2), var(--accent));
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .3s ease;
+    }
+    .cert-card:hover { border-color: rgba(79,142,247,.3); transform: translateY(-4px); }
+    .cert-card:hover::before { transform: scaleX(1); }
+    .cert-header {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .cert-icon {
+      font-size: 1.8rem;
+    }
+    .cert-date {
+      font-size: .7rem; color: var(--muted);
+      letter-spacing: .1em; text-transform: uppercase;
+    }
+    .cert-body { }
+    .cert-title {
+      font-family: var(--font-display);
+      font-weight: 700; font-size: 1rem;
+      margin-bottom: .3rem;
+    }
+    .cert-issuer {
+      font-size: .7rem; color: var(--accent2);
+      letter-spacing: .05em; text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+    .cert-desc { font-size: .72rem; color: var(--muted); line-height: 1.7; }
+
     /* ── PROJECTS ── */
     .projects-grid {
       display: grid;
